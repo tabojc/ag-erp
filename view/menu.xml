@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem id="inicio_visita_menu" name="Visitas" />	
+		<menuitem id="visita_menu" name="Visitas" parent="inicio_visita_menu" />
+		<menuitem id="persona_menu" name="Personas" parent="visita_menu" action="persona_list_action" />
+        
+        <menuitem id="visitas_menu" name="Visita" parent="visita_menu" action="visitas_list_action" />
+        
+        <!--menuitem id="configuracion_menu" name="Configuracion" parent="visita_menu" />
+        <menuitem id="contact_menu" name="Contactos" parent="configuracion_menu" action="persona_list_action" />
+        <menuitem id="contact_cat_menu" name="Etiqueta de Contactos" parent="configuracion_menu" action="persona_cat_list_action" /-->
+	</data>
+</openerp>

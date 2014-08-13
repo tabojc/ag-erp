@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <record model="ir.actions.act_window" id="persona_list_action">
+            <field name="name">Socios</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--
+        <record model="ir.ui.view" id="persona_form_view">
+            <field name="name">persona.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+            </field>
+        </record>
+        -->        
+    </data>
+</openerp>

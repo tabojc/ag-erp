@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.actions.act_window" id="visitas_list_action">
+			<field name="name">Visita</field>
+			<field name="res_model">visita.visita</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!--Formulario Visita-->
+		<record model="ir.ui.view" id="visita_form_view">
+			<field name="name">visita.form</field>
+			<field name="model">visita.visita</field>
+			<field name="arch" type="xml">
+				<form string="Visita form">
+					<field name="visitante_id" colspan="4" />
+                    <field name="fecha_entrada" colspan="4" />
+                    <field name="fecha_salida" colspan="4" />
+                    <!--field name="empleado_id" colspan="4" />
+                    <field name="departamento_id" colspan="4" /-->
+				</form>
+			</field>
+		</record>
+
+	</data>
+</openerp>
